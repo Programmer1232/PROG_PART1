@@ -1,0 +1,87 @@
+﻿<Window x:Class="ContractMonthlyClaimSystemWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Contract Monthly Claim System" Height="600" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="1">
+            <!-- Contracts Tab -->
+            <TabItem Header="Contracts">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5">
+                        <Button Content="Add Contract" Click="AddContract_Click" Margin="5"/>
+                        <Button Content="Edit Contract" Click="EditContract_Click" Margin="5"/>
+                        <Button Content="Delete Contract" Click="DeleteContract_Click" Margin="5"/>
+                    </StackPanel>
+
+                    <ListView Name="ContractListView" Grid.Row="1" Margin="5">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Contract Name" DisplayMemberBinding="{Binding ContractName}" Width="150"/>
+                                <GridViewColumn Header="Start Date" DisplayMemberBinding="{Binding StartDate}" Width="100"/>
+                                <GridViewColumn Header="End Date" DisplayMemberBinding="{Binding EndDate}" Width="100"/>
+                                <GridViewColumn Header="Total Value" DisplayMemberBinding="{Binding TotalValue}" Width="100"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+
+            <!-- Monthly Claims Tab -->
+            <TabItem Header="Monthly Claims">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5">
+                        <Button Content="Add Claim" Click="AddClaim_Click" Margin="5"/>
+                        <Button Content="Upload Document" Click="UploadDocument_Click" Margin="5"/>
+                        <Button Content="Verify Claim" Click="VerifyClaim_Click" Margin="5"/>
+                        <Button Content="Approve Claim" Click="ApproveClaim_Click" Margin="5"/>
+                    </StackPanel>
+
+                    <ListView Name="ClaimListView" Grid.Row="1" Margin="5">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Contract Name" DisplayMemberBinding="{Binding Contract.ContractName}" Width="150"/>
+                                <GridViewColumn Header="Claim Date" DisplayMemberBinding="{Binding ClaimDate}" Width="100"/>
+                                <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Amount}" Width="100"/>
+                                <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="100"/>
+                                <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="200"/>
+                                <GridViewColumn Header="Supporting Document" DisplayMemberBinding="{Binding SupportingDocumentPath}" Width="200"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+
+            <!-- Claim Status Tab -->
+            <TabItem Header="Claim Status">
+                <Grid>
+                    <ListView Name="ClaimStatusListView" Margin="5">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Contract Name" DisplayMemberBinding="{Binding Contract.ContractName}" Width="150"/>
+                                <GridViewColumn Header="Claim Date" DisplayMemberBinding="{Binding ClaimDate}" Width="100"/>
+                                <GridViewColumn Header="Amount" DisplayMemberBinding="{Binding Amount}" Width="100"/>
+                                <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="100"/>
+                                <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="200"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

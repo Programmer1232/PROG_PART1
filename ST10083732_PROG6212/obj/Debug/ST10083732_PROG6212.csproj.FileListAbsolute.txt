@@ -1,0 +1,14 @@
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\bin\Debug\ST10083732_PROG6212.exe.config
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\bin\Debug\ST10083732_PROG6212.exe
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\bin\Debug\ST10083732_PROG6212.pdb
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\MainWindow.baml
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\MainWindow.g.cs
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\App.g.cs
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212_MarkupCompile.cache
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.g.resources
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.Properties.Resources.resources
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.csproj.GenerateResource.cache
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.exe
+C:\Users\lab_services_student\source\repos\ST10083732_PROG6212\obj\Debug\ST10083732_PROG6212.pdb
